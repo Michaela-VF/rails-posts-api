@@ -50,6 +50,7 @@ Focus on full CRUD (ALMOST!)
     curl -X PATCH http://127.0.0.1:3000/posts/1 \
     -H "Content-Type: application/json" \
     -d '{"post":{"title":"1st Post - UPDATED Title!"}}'
+    ```
 
     ![Update 1st Post Terminal View](docs/images/Updated_Post_Terminal.png)
 
