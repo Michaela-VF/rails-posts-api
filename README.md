@@ -1,6 +1,4 @@
 
-![Update 1st Post Terminal View](docs/images/Updated_Post_Terminal.png)
-
 # ABOUT
 * fields: title, body
 * add: update endpoint
@@ -46,12 +44,16 @@ Focus on full CRUD (ALMOST!)
     ![Update Inexistent Post Terminal View](docs/images/Update_Inexistent_Post_Terminal.png)
 
 ---
-7.   Update the 1st post
-    ``` curl -X PATCH http://127.0.0.1:3000/posts/1 -H "Content-Type: application/json" -d '{"post":{"title":"1st Post - UPDATED Title!:"}}' ```
+7. Update the 1st post
 
+    ```bash
+    curl -X PATCH http://127.0.0.1:3000/posts/1 \
+    -H "Content-Type: application/json" \
+    -d '{"post":{"title":"1st Post - UPDATED Title!"}}'
 
+    ![Update 1st Post Terminal View](docs/images/Updated_Post_Terminal.png)
 
-![Update 1st Post Web View](docs/images/Updated_Post_Web.png)
+    ![Update 1st Post Web View](docs/images/Updated_Post_Web.png)
 
     
     NOTES: The post with empty title was created before modifying the migration file to not allow null data.
